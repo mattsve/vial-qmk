@@ -499,6 +499,7 @@ void keyboard_post_init_kb(void) {
 #    ifdef CHARYBDIS_CONFIG_DUAL_SYNC
     transaction_register_rpc(RPC_ID_KB_CONFIG_DUAL_SYNC, charybdis_config_dual_sync_handler);
 #    endif
+    charybdis_set_pointer_dragscroll_enabled(true, true);
     keyboard_post_init_user();
 }
 
